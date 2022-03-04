@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script for quickly building ASM files into a.out
+# Script for quickly building IA32 .s files into a.out
 
 if [ $# -eq 0 ]; then
 	echo "No arguments supplied"
