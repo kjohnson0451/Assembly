@@ -5,7 +5,8 @@
 	# 4(%eax)
 	# (%eax, %ebx)
 	#
-	# Just take the binary file and run it against gdb
+	# Take the binary file, run it against gdb,
+	# and examine the registers and variables:
 	# $ gdb operands
 	#
 	# Useful GDB instructions:
