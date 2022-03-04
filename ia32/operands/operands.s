@@ -43,7 +43,12 @@ var4:
 	.globl main
 main:
 	movl $var1, %eax
-	movl $var2, %ebx
+	movl $0x1, %ecx
+	movl $0x3, %edx
+	movl (%eax), %ebx
+	movl 4(%eax), %ebx
+	movl 9(%eax, %edx), %ebx
+	movl (%eax, %edx, 4), %ebx
 
 	# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	# Exit Program
