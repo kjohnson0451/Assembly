@@ -2,6 +2,8 @@
 
 # Script for quickly building ASM files into a.out
 
+set -e
+
 if [ $# -eq 0 ]; then
 	echo "No arguments supplied"
 	exit 1
